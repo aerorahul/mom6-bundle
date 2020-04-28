@@ -17,9 +17,6 @@ ecbuild_requires_macro_version( 2.7 )
 
 ecbuild_bundle( PROJECT gsw GIT "https://github.com/JCSDA/GSW-Fortran.git" BRANCH develop UPDATE )
 ecbuild_bundle( PROJECT fms GIT "https://github.com/JCSDA/FMS.git" BRANCH dev/master-ecbuild UPDATE )
-ecbuild_bundle( PROJECT cvmix GIT "https://github.com/JCSDA/CVMix-src.git" BRANCH feature/ecbuild UPDATE )
-ecbuild_bundle( PROJECT geokdtree GIT "https://github.com/JCSDA/geoKdTree.git" BRANCH feature/ecbuild UPDATE )
-ecbuild_bundle( PROJECT mom6_da_hooks GIT "https://github.com/JCSDA/MOM6_DA_hooks.git" BRANCH feature/ecbuild UPDATE )
-ecbuild_bundle( PROJECT mom6 GIT "https://github.com/JCSDA/MOM6.git" BRANCH dev/master-ecbuild UPDATE )
+ecbuild_bundle( PROJECT mom6 GIT "https://github.com/JCSDA/MOM6.git" BRANCH feature/recursion UPDATE RECURSIVE )
 
 ecbuild_bundle_finalize()
